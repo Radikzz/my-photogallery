@@ -1,3 +1,4 @@
+
 var Component = require("montage/ui/component").Component,
     sharedRottenTomatoService = require("core/tmdb-service").shared,
     sharedYoutubeService = require("core/youtube-service").shared;
