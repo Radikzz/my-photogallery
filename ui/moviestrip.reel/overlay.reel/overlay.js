@@ -1,16 +1,12 @@
-/**
- * @module ui/moviestrip.reel/overlay.reel
- */
+
 var Component = require("montage/ui/component").Component;
 
-/**
- * @class Overlay
- * @extends Component
- */
-exports.Overlay = Component.specialize(/** @lends Overlay# */ {
+exports.Overlay = Component.specialize({
+
     constructor: {
         value: function Overlay() {
             this.super();
         }
     }
+
 });
