@@ -1,16 +1,22 @@
 /**
- * @module ui/categories.reel/category-button.reel
+ * @module ui/category-button.reel
+ * @requires montage/ui/component
  */
-var Component = require("montage/ui/component").Component;
+var AbstractRadioButton = require("montage/ui/base/abstract-radio-button").AbstractRadioButton;
 
 /**
  * @class CategoryButton
  * @extends Component
  */
-exports.CategoryButton = Component.specialize(/** @lends CategoryButton# */ {
+exports.CategoryButton = AbstractRadioButton.specialize(/** @lends CategoryButton# */ {
+
     constructor: {
         value: function CategoryButton() {
             this.super();
         }
+    },
+
+    label: {
+        value: null
     }
 });
